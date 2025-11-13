@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Karthikeyan — About Me</title>
+    <meta name="description" content="Personal introduction page for Karthikeyan — developer, learner, and curious creator." />
+    <style>
+      :root{
+        --bg:#0f1724;
+        --card:#0b1220;
+        --accent:#06b6d4;
+        --muted:#94a3b8;
+        --glass: rgba(255,255,255,0.04);
+        --radius:14px;
+        font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      }
+      *{box-sizing:border-box}
+      html,body{height:100%}
+      body{
+        margin:0;
+        background: linear-gradient(180deg,#071028 0%, var(--bg) 100%);
+        color:#e6eef6;
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale;
+        line-height:1.45;
+        padding:32px;
+      }
+      .container{max-width:980px;margin:0 auto}
+      header{display:flex;gap:20px;align-items:center;margin-bottom:28px}
+      .avatar{
+        width:96px;height:96px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:36px;color:#021022;box-shadow:0 8px 30px rgba(2,8,23,.6);
+      }
+      h1{font-size:28px;margin:0}
+      p.lead{margin:6px 0 0;color:var(--muted)}
+
+      .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+      main{background:linear-gradient(180deg,var(--glass), transparent);padding:20px;border-radius:var(--radius)}
+      aside{background:linear-gradient(180deg, rgba(255,255,255,0.03), transparent);padding:20px;border-radius:12px;height:100%}
+
+      .section{margin-bottom:18px}
+      .section h2{font-size:16px;margin:0 0 8px}
+      .bio{font-size:15px;color:#dbeafe}
+
+      .skills{display:flex;flex-wrap:wrap;gap:8px}
+      .chip{background:rgba(255,255,255,0.04);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+
+      .projects{display:flex;flex-direction:column;gap:12px}
+      .project{background:#071026;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+      .project h3{margin:0 0 6px;font-size:15px}
+      .project p{margin:0;color:var(--muted);font-size:13px}
+
+      .contact a{display:inline-block;margin-right:10px;text-decoration:none;padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);font-size:14px;color:inherit}
+
+      footer{margin-top:18px;color:var(--muted);font-size:13px}
+
+      @media (max-width:880px){
+        .grid{grid-template-columns:1fr}
+        aside{order:2}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="avatar" aria-hidden="true">K</div>
+        <div>
+          <h1>Karthikeyan — Curious Maker &amp; Developer</h1>
+          <p class="lead">I build small, delightful tools, learn fast, and share what I discover. Currently exploring web dev, automation, and data play.</p>
+        </div>
+      </header>
+
+      <div class="grid">
+        <main>
+          <section class="section">
+            <h2>About me</h2>
+            <p class="bio">Hello — I’m <strong>Karthikeyan</strong>. I love turning ideas into tidy code and friendly interfaces. I tinker with JavaScript, HTML/CSS and dabble in Python for automation and data. I enjoy reading tech blogs, trying new libraries, and making tools that save a minute of someone’s day. Outside of screens I like photography, quick hikes, and learning to cook one perfect meal at a time.</p>
+          </section>
+
+          <section class="section">
+            <h2>What I enjoy building</h2>
+            <div class="projects">
+              <article class="project">
+                <h3>Mini Task Runner</h3>
+                <p>A lightweight CLI that automates daily dev tasks — compile, test, deploy — with a single command. Great for speeding up repetitive chores.</p>
+              </article>
+
+              <article class="project">
+                <h3>Study Notes Hub</h3>
+                <p>A static site generator for personal study notes, optimized for quick search and beautiful printing to PDF for offline study.</p>
+              </article>
+
+              <article class="project">
+                <h3>Photo Moment</h3>
+                <p>A small web gallery that tells the story behind a photo with captions, location tags and an easy share link.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Open to collaborate</h2>
+            <p class="bio">I’m open to small freelance projects, open-source contribution, or pairing on short prototypes. If you’re building something useful and want a practical teammate, let’s chat.</p>
+          </section>
+        </main>
+
+        <aside>
+          <div class="section">
+            <h2>Quick facts</h2>
+            <ul style="padding-left:18px;margin:8px 0;color:var(--muted);">
+              <li>Location: Chennai &middot; India</li>
+              <li>Works with: HTML, CSS, JavaScript, Python</li>
+              <li>Likes: minimalist UI, helpful docs, green tea</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Python</span>
+              <span class="chip">Git &amp; GitHub</span>
+              <span class="chip">Basic DevOps</span>
+            </div>
+          </div>
+
+          <div class="section contact">
+            <h2>Contact</h2>
+            <p style="color:var(--muted);margin:8px 0 12px">Feel free to reach out — I reply thoughtfully.</p>
+            <a href="mailto:karthikeyan@example.com">Email</a>
+            <a href="https://github.com/karthikeyan" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/karthikeyan" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+
+          <div class="section">
+            <h2>Fun fact</h2>
+            <p style="color:var(--muted);margin:8px 0">I once used a Raspberry Pi to automate coffee reminders — learned more about cron jobs and friendships that week.</p>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <p>Made with curiosity • <strong>Karthikeyan</strong></p>
+      </footer>
+    </div>
+  </body>
+</html>
